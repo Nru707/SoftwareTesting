@@ -1,31 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-10T13:00:23 IST" name="Default suite" finished-at="2025-07-10T13:01:21 IST" duration-ms="57379">
+  <suite started-at="2025-07-10T13:15:02 IST" name="TestSuite" finished-at="2025-07-10T13:15:37 IST" duration-ms="34142">
     <groups>
     </groups>
-    <test started-at="2025-07-10T13:00:23 IST" name="Default test" finished-at="2025-07-10T13:01:21 IST" duration-ms="57379">
-      <class name="com.learn.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.learn.testcases.LoginTest@385c9627]" started-at="2025-07-10T13:00:23 IST" name="setUp" finished-at="2025-07-10T13:00:34 IST" duration-ms="10462" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.learn.testcases.LoginTest@385c9627]" started-at="2025-07-10T13:00:34 IST" name="verifyLogin" finished-at="2025-07-10T13:00:41 IST" duration-ms="6986" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learn.testcases.LoginTest@385c9627]" started-at="2025-07-10T13:00:41 IST" name="tearDown" finished-at="2025-07-10T13:00:42 IST" duration-ms="1053" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.learn.testcases.LoginTest -->
+    <test started-at="2025-07-10T13:15:02 IST" name="Login Test" finished-at="2025-07-10T13:15:37 IST" duration-ms="34142">
       <class name="com.learn.testcases.LoginTestDriverData">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.learn.testcases.LoginTestDriverData@139982de]" started-at="2025-07-10T13:00:42 IST" name="setUp" finished-at="2025-07-10T13:00:50 IST" duration-ms="7913" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.learn.testcases.LoginTestDriverData@776aec5c]" started-at="2025-07-10T13:15:03 IST" name="setUp" finished-at="2025-07-10T13:15:15 IST" duration-ms="12309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:com.learn.testcases.LoginTestDriverData@139982de]" started-at="2025-07-10T13:00:50 IST" name="verifyLogin" data-provider="LoginDataProvider" finished-at="2025-07-10T13:01:00 IST" duration-ms="9651" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:com.learn.testcases.LoginTestDriverData@776aec5c]" started-at="2025-07-10T13:15:16 IST" name="verifyLogin" data-provider="LoginDataProvider" finished-at="2025-07-10T13:15:26 IST" duration-ms="10525" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:com.learn.testcases.LoginTestDriverData@139982de]" started-at="2025-07-10T13:01:00 IST" name="verifyLogin" data-provider="LoginDataProvider" finished-at="2025-07-10T13:01:09 IST" duration-ms="9462" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:com.learn.testcases.LoginTestDriverData@776aec5c]" started-at="2025-07-10T13:15:26 IST" name="verifyLogin" data-provider="LoginDataProvider" finished-at="2025-07-10T13:15:35 IST" duration-ms="9150" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,25 +43,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learn.testcases.LoginTestDriverData@139982de]" started-at="2025-07-10T13:01:09 IST" name="tearDown" finished-at="2025-07-10T13:01:10 IST" duration-ms="1027" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learn.testcases.LoginTestDriverData@776aec5c]" started-at="2025-07-10T13:15:35 IST" name="tearDown" finished-at="2025-07-10T13:15:37 IST" duration-ms="1143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.learn.testcases.LoginTestDriverData -->
-      <class name="com.learn.testcases.TestCasedemo">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.learn.testcases.TestCasedemo@682b2fa]" started-at="2025-07-10T13:01:10 IST" name="setUp" finished-at="2025-07-10T13:01:20 IST" duration-ms="9507" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testcheck()[pri:0, instance:com.learn.testcases.TestCasedemo@682b2fa]" started-at="2025-07-10T13:01:20 IST" name="testcheck" finished-at="2025-07-10T13:01:20 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcheck -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learn.testcases.TestCasedemo@682b2fa]" started-at="2025-07-10T13:01:20 IST" name="tearDown" finished-at="2025-07-10T13:01:21 IST" duration-ms="776" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.learn.testcases.TestCasedemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Login Test -->
+  </suite> <!-- TestSuite -->
 </testng-results>
