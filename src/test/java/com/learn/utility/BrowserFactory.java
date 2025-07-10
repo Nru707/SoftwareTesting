@@ -8,8 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.ie.InternetExplorerOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrowserFactory {
@@ -50,13 +48,24 @@ public class BrowserFactory {
 			driver = new FirefoxDriver(firefoxOptions);
 			break;
 		}
+		case "brave": {
+		    WebDriverManager.chromedriver().setup();
 
-		case "ie": {
-			WebDriverManager.iedriver().setup();
-			InternetExplorerOptions ieOptions = new InternetExplorerOptions();
-			driver = new InternetExplorerDriver(ieOptions);
-			break;
+		    ChromeOptions options = new ChromeOptions();
+		    options.setBinary("/usr/bin/brave-browser");
+		    options.addArguments("--remote-allow-origins=*");
+		    options.addArguments("--no-sandbox");
+		    options.addArguments("--disable-dev-shm-usage");
+		    options.addArguments("--disable-gpu");
+		    options.addArguments("--disable-extensions");
+		    options.addArguments("--start-maximized");
+
+		    System.out.println("✅ BraveOptions: " + options.toString());
+
+		    driver = new ChromeDriver(options);
+		    break;
 		}
+
 
 		default: {
 			throw new IllegalArgumentException("❌ Browser not supported: " + browserName);
